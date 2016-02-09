@@ -4,15 +4,19 @@
 </head>
 
 <body>
-In each picture, enter in how many unique faces or heads are shown. 
+In each picture, enter in how many unique faces/heads of people are shown. 
 <br>
 <br>
 Payments are based on how accurate your answer to each picture is 
 compared to other submissions.
 <br>
 <img src="people1.jpg" id="1" />
-<p id="2">two</p>
-<p id="3">three</p>
+<img src="people2.jpg" id="2" />
+<img src="people3.jpg" id="3" />
+<img src="people4.jpg" id="4" />
+<img src="people5.jpg" id="5" />
+<img src="people6.jpg" id="6" />
+<img src="people7.jpg" id="7" />
 <p id="done">Thats it! Thanks for your help.</p>
 <button id="submit">Submit button</button>
 Type a number: <input id="field">
@@ -22,13 +26,22 @@ Type a number: <input id="field">
     var img1 = document.getElementById("1");
     var img2 = document.getElementById("2");
     var img3 = document.getElementById("3");
+    var img4 = document.getElementById("4");
+    var img5 = document.getElementById("5");
+    var img6 = document.getElementById("6");
+    var img7 = document.getElementById("7");
+
     var done = document.getElementById("done");
     var submit = document.getElementById("submit");
 
     //img1.style.display = "none";
     img2.style.display = "none";
     img3.style.display = "none";
-    // continue for other images
+    img4.style.display = "none";
+    img5.style.display = "none";
+    img6.style.display = "none";
+    img7.style.display = "none";
+
     done.style.display = "none";
 
     var currentImage = 1;
@@ -49,19 +62,33 @@ Type a number: <input id="field">
 
         else if (currentImage == 3) {
             img3.style.display = "none";
-            done.style.display = "block";
+            img4.style.display = "block";
             currentImage++;
         }
 
-        // continue to 7
+        else if (currentImage == 4) {
+            img4.style.display = "none";
+            img5.style.display = "block";
+            currentImage++;
+        }
 
+        else if (currentImage == 5) {
+            img5.style.display = "none";
+            img6.style.display = "block";
+            currentImage++;
+        }
 
-        // if (img1.style.display != "none") {
-        //     img1.style.display = "none";
-        // }
-        // else {
-        //     img1.style.display = "block";
-        // }
+        else if (currentImage == 6) {
+            img6.style.display = "none";
+            img7.style.display = "block";
+            currentImage++;
+        }
+
+        else if (currentImage == 7) {
+            img7.style.display = "none";
+            done.style.display = "block";
+            currentImage++;
+        }
     }
 
     submit.onclick = buttonClick;
