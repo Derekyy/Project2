@@ -28,81 +28,80 @@ compared to other submissions.
     <br>
     <input type='submit' value='Submit'/>
     Type a number: <input type = "text" name ="number people">
+
+    <title>Count the People</title>
+ <meta name="author" content="Sophie Zhao">
+ <link rel="stylesheet" href="css/mturk.css" type="text/css">
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script src="js/mturk.js"></script>
+       <div class="count response">
+       <h3>1: In the following picture... 
+       </h3>
+       <label>How many FACES are there?
+           <input type="text" name="question">
+       </label><br>
+       <label>How many PEOPLE are there?
+           <input type="text" name="question">
+       </label><br>
+       <label>How many RECOGNIZABLE PEOPLE are there?
+           <input type="text" name="question">
+       </label><br>
+       <img src="people1.jpg" alt="HTML5 Icon">
+       <br><br><br>
+
+       <h3>2: In the following picture... 
+       </h3>
+       <label>How many RECOGNIZABLE PEOPLE are there?
+           <input type="text" name="question">
+       </label><br>
+       <img src="people2.jpg" alt="HTML5 Icon">
+       <br><br><br>
+
+       <h3>3: In the following picture... 
+       </h3>
+       <label>How many RECOGNIZABLE PEOPLE are there?
+           <input type="text" name="question">
+       </label><br>
+       <img src="people3.jpg" alt="HTML5 Icon">
+       <br><br><br>
+
+       <h3>4: In the following picture... 
+       </h3>
+       <label>How many RECOGNIZABLE PEOPLE are there?
+           <input type="text" name="question">
+       </label><br>
+       <img src="people4.jpg" alt="HTML5 Icon">
+       <br><br><br>
+
+       <h3>5: In the following picture... 
+       </h3>
+       <label>How many RECOGNIZABLE PEOPLE are there?
+           <input type="text" name="question">
+       </label><br>
+       <img src="people5.jpg" alt="HTML5 Icon">
+       <br><br><br>
+
+       <h3>6: In the following picture... 
+       </h3>
+       <label>How many RECOGNIZABLE PEOPLE are there?
+           <input type="text" name="question">
+       </label><br>
+       <img src="people6.jpg" alt="HTML5 Icon">
+       <br><br><br>
+
+       <h3>7: In the following picture... 
+       </h3>
+       <label>How many RECOGNIZABLE PEOPLE are there?
+           <input type="text" name="question">
+       </label><br>
+       <img src="people7.jpg" alt="HTML5 Icon">
+       <br><br><br>
+
+       <h3>Thats it! Thanks for your help
+       </h3><br>
+       <button type="submit" class="btn btn-default">Submit</button>
 </form>
 
-<script>
-    var img1 = document.getElementById("1");
-    var img2 = document.getElementById("2");
-    var img3 = document.getElementById("3");
-    var img4 = document.getElementById("4");
-    var img5 = document.getElementById("5");
-    var img6 = document.getElementById("6");
-    var img7 = document.getElementById("7");
-
-    var done = document.getElementById("done");
-    //var submit = document.getElementById("submit");
-
-    //img1.style.display = "none";
-    img2.style.display = "none";
-    img3.style.display = "none";
-    img4.style.display = "none";
-    img5.style.display = "none";
-    img6.style.display = "none";
-    img7.style.display = "none";
-
-    done.style.display = "none";
-
-    var currentImage = 1;
-
-    function buttonClick() {
-        if (currentImage == 1) {
-            img1.style.display = "none";
-            img2.style.display = "block";
-            // get text value
-            currentImage++;
-        }
-
-        else if (currentImage == 2) {
-            img2.style.display = "none";
-            img3.style.display = "block";
-            currentImage++;
-        }
-
-        else if (currentImage == 3) {
-            img3.style.display = "none";
-            img4.style.display = "block";
-            currentImage++;
-        }
-
-        else if (currentImage == 4) {
-            img4.style.display = "none";
-            img5.style.display = "block";
-            currentImage++;
-        }
-
-        else if (currentImage == 5) {
-            img5.style.display = "none";
-            img6.style.display = "block";
-            currentImage++;
-        }
-
-        else if (currentImage == 6) {
-            img6.style.display = "none";
-            img7.style.display = "block";
-            currentImage++;
-        }
-
-        else if (currentImage == 7) {
-            img7.style.display = "none";
-            done.style.display = "block";
-            currentImage++;
-        }
-    }
-
-    submit.onclick = buttonClick;
-    done.style.display = "none";
-
-</script>
 </body>
 
 </html>
